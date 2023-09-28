@@ -11,7 +11,7 @@ public class Sieve
         Scanner in = new Scanner(System.in);
         System.out.println("Compute primes up to which integer?");
         int n = in.nextInt();
-
+        in.close();
         // Your work goes here
          Set<Integer> numbers = new HashSet<>();
          int count = 2;
