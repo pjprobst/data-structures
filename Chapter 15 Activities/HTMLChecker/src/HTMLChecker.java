@@ -17,13 +17,26 @@ public class HTMLChecker
 {
     public static void main(String[] args)
     {
-        String filename = "src/TagSample1.html";
+        String filename = "Chapter 15 Activities/HTMLChecker/src/TagSample1.html";
+        Stack<String> braces = new Stack<>();
+        String current;
 
         try (Scanner in = new Scanner(new File(filename)))
         {
-            // Your code goes here
-            . . .
+            braces.push(in.next());
+            while (in.hasNext())
+            {
+                String next = in.next();
+                current = braces.pop();
 
+                if (next.contains("/") && next.charAt(2) != (current.charAt(1)) || !next.contains("/"))
+                {
+                        braces.push(current);
+                        braces.push(next);
+                }
+                
+            }
+            System.out.println(braces);
 
         } catch (FileNotFoundException e)
         {
