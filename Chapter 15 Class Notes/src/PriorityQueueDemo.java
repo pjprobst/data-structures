@@ -10,5 +10,12 @@ public class PriorityQueueDemo
 {
     public static void main(String[] args)
     {
+        Queue<WorkOrder> hwtodo = new priorityQueue();
+        
+        hwtodo.add(new WorkOrder(3, "math"));
+        hwtodo.add(new WorkOrder(3, "math"));
+        hwtodo.add(new WorkOrder(3, "math"));
+        hwtodo.add(new WorkOrder(3, "math"));
+
     }
 }

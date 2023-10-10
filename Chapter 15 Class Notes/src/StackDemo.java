@@ -24,5 +24,15 @@ public class StackDemo
         //print stack
 
         System.out.println(commands);
+
+        for (int i = 0; i < 4; i++){
+            String command = commands.pop();
+            System.out.println("Undo: " + command);
+
+
+        
+        }
     }
 }
+
+
