@@ -20,6 +20,8 @@ public interface ListIterator
     */
     boolean hasNext();
 
+    boolean contains();
+
     /**
         Adds an element before the iterator position
         and moves the iterator past the inserted element.
